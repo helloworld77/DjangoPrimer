@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place Holder</title>
+    <link rel="stylesheet" href="{% static 'site.css' %} " type="text/css">
+</head>
+<body>
+    <h1>Django Placeholder Images</h1>
+    <p>
+        该服务应用的功能是提供图片占位符
+    </p>
+    <p>
+        请求服务器响应需要提供图片的width和height参数<b>/image/&lt;width&gt;x&lt;height&gt;/</b>
+    </p>
+    <pre>
+        &lt; img src="{{ example }}" &gt;
+    </pre>
+    <h2>Example</h2>
+
+    <ul>
+        <li>
+            <img src="{% url 'placeholder' width=50 height=50 %}">
+        </li>
+        <li>
+            <img src="{% url 'placeholder' width=100 height=50 %}">
+        </li>
+        <li>
+            <img src="{% url 'placeholder' width=50 height=100 %}">
+        </li>
+    </ul>
+</body>
+</html>
