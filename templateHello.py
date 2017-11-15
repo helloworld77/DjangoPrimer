@@ -74,7 +74,6 @@ class ImageForm(forms.Form):
             cache.set(key, content, 60*60)
         return content
 
-##接收
 def generate_etag(req, width, height):
     content = 'Placeholder: {0}x{1}'.format(width, height)
     return hashlib.sha1(content.encode('utf-8')).hexdigest()
