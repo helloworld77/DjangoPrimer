@@ -55,7 +55,7 @@ def index(req):
     context = {
         'example': req.build_absolute_uri(example)
     }
-    print ('********',context)
+    # print ('********',context)
     return render_to_response('home.html', context)
 
 urlpatterns=[
@@ -97,7 +97,7 @@ settings.configure(
 application = get_wsgi_application()
 
 if __name__ == "__main__":
-    print("***********",BASE_DIR)
+    # print("***********",BASE_DIR)
     from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)
 
