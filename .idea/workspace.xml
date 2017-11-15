@@ -41,9 +41,14 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2139">
-              <caret line="93" column="67" lean-forward="true" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="2415">
+              <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+              <folding>
+                <marker date="1510727043844" expanded="true" signature="14938:15063" ph="..." />
+                <marker date="1510727043844" expanded="true" signature="14938:15081" ph="..." />
+                <marker date="1510727043844" expanded="true" signature="14938:15094" ph="..." />
+                <marker date="1510727043844" expanded="true" signature="14938:15109" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510726607663</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify drawing function">
+      <created>1510727046848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510727046848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -239,9 +251,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="93" column="67" lean-forward="true" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="2415">
+          <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+          <folding>
+            <marker date="1510727043844" expanded="true" signature="14938:15063" ph="..." />
+            <marker date="1510727043844" expanded="true" signature="14938:15081" ph="..." />
+            <marker date="1510727043844" expanded="true" signature="14938:15094" ph="..." />
+            <marker date="1510727043844" expanded="true" signature="14938:15109" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
