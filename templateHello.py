@@ -92,7 +92,7 @@ def index(req):
     context = {
         'example': req.build_absolute_uri(example)##把上面形成的地址传递给页面
     }
-    # print ('********',context)
+    print(example)
     return render_to_response('home.html', context)
 
 urlpatterns=[
