@@ -83,8 +83,6 @@ def generate_etag(req, width, height):
 def placeholder(req, width, height):
     form = ImageForm({'width':width, 'height':height})
     if form.is_valid():
-        # height = form.cleaned_data['height']
-        # width = form.cleaned_data['width']
         image = form.generate()
         return HttpResponse(image, content_type='image/png')
     else:
