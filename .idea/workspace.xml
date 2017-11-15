@@ -41,13 +41,13 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2415">
-              <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+            <state relative-caret-position="2530">
+              <caret line="110" column="67" lean-forward="true" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
               <folding>
-                <marker date="1510727043844" expanded="true" signature="14938:15063" ph="..." />
-                <marker date="1510727043844" expanded="true" signature="14938:15081" ph="..." />
-                <marker date="1510727043844" expanded="true" signature="14938:15094" ph="..." />
-                <marker date="1510727043844" expanded="true" signature="14938:15109" ph="..." />
+                <marker date="1510727056442" expanded="true" signature="16047:16172" ph="..." />
+                <marker date="1510727056442" expanded="true" signature="16047:16190" ph="..." />
+                <marker date="1510727056442" expanded="true" signature="16047:16203" ph="..." />
+                <marker date="1510727056442" expanded="true" signature="16047:16218" ph="..." />
               </folding>
             </state>
           </provider>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510727046848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modify drawing function">
+      <created>1510727059782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510727059782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -251,13 +258,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="105" column="67" lean-forward="true" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+        <state relative-caret-position="2530">
+          <caret line="110" column="67" lean-forward="true" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
           <folding>
-            <marker date="1510727043844" expanded="true" signature="14938:15063" ph="..." />
-            <marker date="1510727043844" expanded="true" signature="14938:15081" ph="..." />
-            <marker date="1510727043844" expanded="true" signature="14938:15094" ph="..." />
-            <marker date="1510727043844" expanded="true" signature="14938:15109" ph="..." />
+            <marker date="1510727056442" expanded="true" signature="16047:16172" ph="..." />
+            <marker date="1510727056442" expanded="true" signature="16047:16190" ph="..." />
+            <marker date="1510727056442" expanded="true" signature="16047:16203" ph="..." />
+            <marker date="1510727056442" expanded="true" signature="16047:16218" ph="..." />
           </folding>
         </state>
       </provider>
