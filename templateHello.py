@@ -22,8 +22,7 @@ from django.views.decorators.http import etag
 
 ##setting.py
 DEBUG = os.environ.get('DEBUG','on')=='on'
-SECRET_KEY = os.environ.get('SECRET_KEY',
-                            '&8x8ono))lhdi_6fg!h_9uv3l97w$m$(m6lg&0tttyb2e_lnlv')
+SECRET_KEY = os.environ.get('SECRET_KEY', '&8x8ono))lhdi_6fg!h_9uv3l97w$m$(m6lg&0tttyb2e_lnlv')
 ALLOWED_HOSTS=['*']
 BASE_DIR = os.path.dirname(__file__)
 settings.configure(
@@ -92,9 +91,9 @@ def placeholder(req, width, height):
         return HttpResponseBadRequest('图片格式错误')
 
 def index(req):
-    example = reverse('placeholder', kwargs={'width':50, 'height':50})
+    example = reverse('placeholder', kwargs={'width':50, 'height':50})##通过url标签和参数获取地址
     context = {
-        'example': req.build_absolute_uri(example)
+        'example': req.build_absolute_uri(example)##把上面形成的地址传递给页面
     }
     # print ('********',context)
     return render_to_response('home.html', context)
