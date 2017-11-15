@@ -20,6 +20,7 @@ from django.http import HttpResponse, HttpResponseBadRequest
 from django.shortcuts import render,render_to_response
 from django.views.decorators.http import etag
 
+##setting.py
 DEBUG = os.environ.get('DEBUG','on')=='on'
 SECRET_KEY = os.environ.get('SECRET_KEY',
                             '&8x8ono))lhdi_6fg!h_9uv3l97w$m$(m6lg&0tttyb2e_lnlv')
@@ -102,8 +103,6 @@ urlpatterns=[
     url(u'^$',index, name='homepage'),
     url(u'^image/(?P<width>[0-9]+)x(?P<height>[0-9]+)/$', placeholder, name='placeholder'),
 ]
-
-
 
 application = get_wsgi_application()
 
