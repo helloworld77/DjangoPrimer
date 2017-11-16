@@ -2,21 +2,34 @@
 import os
 import sys
 
+from django.conf import settings
+
+DEBUG = os.environ.get('DEBUG', 'on') == 'on'
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', '&8x8ono))lhdi_6fg!h_9uv3l97w$m$(m6lg&0tttyb2e_lnlv')
+ALLOWED_HOSTS = ['*']
+BASE_DIR = os.path.dirname(__file__)
+settings.configure(
+    DEBUG=DEBUG,
+    SECRET_KEY=SECRET_KEY,
+    ALLOWED_HOSTS=ALLOWED_HOSTS,
+    ROOT_URLCONF='StaticSiteGenerator.urls',
+    MIDDLEWARE_CLASSES=(),
+    INSTALLED_APPS=(
+        'django.contrib.staticfiles',
+        'StaticSiteGenerator',
+    ),
+    TEMPLATES=[
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+            'DIRS': [],
+            'APP_DIRS': True,
+        }
+    ],
+    STATIC_URL='/static/',
+)
+
+
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "StaticSiteGenerator.settings")
-    try:
-        from django.core.management import execute_from_command_line
-    except ImportError:
-        # The above import may fail for some other reason. Ensure that the
-        # issue is really that Django is missing to avoid masking other
-        # exceptions on Python 2.
-        try:
-            import django
-        except ImportError:
-            raise ImportError(
-                "Couldn't import Django. Are you sure it's installed and "
-                "available on your PYTHONPATH environment variable? Did you "
-                "forget to activate a virtual environment?"
-            )
-        raise
+    from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)
