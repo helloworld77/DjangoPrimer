@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import os
 import sys
-
 from django.conf import settings
 
 DEBUG = os.environ.get('DEBUG', 'on') == 'on'
@@ -28,7 +27,6 @@ settings.configure(
     ],
     STATIC_URL='/static/',
 )
-
 
 if __name__ == "__main__":
     from django.core.management import execute_from_command_line
