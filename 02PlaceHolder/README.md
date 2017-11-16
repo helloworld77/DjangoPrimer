@@ -1,4 +1,4 @@
-# DjangoPrimer(Lightweight Django): Image place holder(Django1.11.3)
+# DjangoPrimer(Lightweight Django): Image Place Holder(Django1.11.3)
 This *.py contains what the minimum django needs:
 1. setting.py
 2. urls.py
