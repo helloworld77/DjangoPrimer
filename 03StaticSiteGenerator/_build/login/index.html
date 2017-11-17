@@ -1,4 +1,4 @@
-{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scal=1">
 	<meta name="keywords" content="">
-	<title>{% block title %}Rapid Prototypes{% endblock %}</title>
-	<link href="{% static 'css/site.css' %}" rel="stylesheet">
-	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<title>Rapid Prototypes - Login</title>
+	<link href="/static/css/site.css" rel="stylesheet">
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<body id="{% block body-id %}body{% endblock %}">
-    {% block top-nav-wrapper %}
+<body id="login">
+    
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -26,25 +26,42 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li {% if slug == 'index' %}class="active"{% endif %}>
+                    <li >
                         <a href="/">Home</a>
                     </li>
-                    <li {% if slug == 'pricing' %}class="active"{% endif %}>
-                        <a href="{% url 'page' 'pricing' %}">Pricing</a>
+                    <li >
+                        <a href="/pricing/">Pricing</a>
                     </li>
-                    <li {% if slug == 'contact' %}class="active"{% endif %}>
-                        <a href="{% url 'page' 'contact' %}">Contact</a>
+                    <li >
+                        <a href="/contact/">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li {% if slug == 'login' %}class="active"{% endif %}>
-                        <a href="{% url 'page' 'login' %}">Login</a>
+                    <li class="active">
+                        <a href="/login/">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    {% endblock %}
-    {% block content %}{% endblock %}
+    
+    
+    <div class="container">
+    <div class="row">
+        <form class="form-signup col-md-6 col-md-offset-3" role="form">
+            <h2 class="form-signin-heading">Login to Your Account</h2>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email address" required="" autofocus="" autocomplete="off" >
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="" autocomplete="off" >
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
